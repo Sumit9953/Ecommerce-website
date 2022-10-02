@@ -183,7 +183,7 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+    
     text-align: center;
     margin-bottom: 32px;
 }
@@ -427,4 +427,30 @@ footer {
     justify-content: space-between;
     padding: 0 24px;
     align-items: center;
+}
+.books__loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 60px;
+    color: #7342d6;
+}
+.books__loading--spinner{
+    display: none !important;
+}
+.books__loading .books__loading--spinner{
+    display: block !important;
+}
+.fa-spinner{
+    animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
