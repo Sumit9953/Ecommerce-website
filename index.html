@@ -8,6 +8,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/09ae7a197c.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -91,80 +92,17 @@
         <section id="feature">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title">Feature <span class="purple">Books</span></h2>
+                    <div class="books__header">
+                        <h2 class="section-title">Feature <span class="purple">Books</span></h2>
+                        <select  id="filter" onchange="filterBooks(event)">
+                            <option value="" disabled selected>Sort</option>></option>
+                            <option value="LOW_TO_HIGH">Price,Low to High</option>
+                            <option value="HIGH_TO_LOW">Price,High to Low</option>
+                            <option value="RATING">Rating</option>
+                          </select>
+                    </div>
                     <div class="books">
-                        <div class="book">
-                            <figure class="book-img-wrapper">
-                                <img class="book-image" src="./assets/crack the coding interview.png" alt="">
-                            </figure>
-                            <div class="book-title">
-                                Crack Coding Interview
-                            </div>
-                            <div class="book-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half"></i>
-                            </div>
-                            <div class="book-price">
-                                <span class="book-price-normal">$59.95</span>14.54$
-                            </div>
-                        </div>
-                        <div class="book">
-                            <figure class="book-img-wrapper">
-                                <img class="book-image" src="./assets/atomic habits.jpg" alt="">
-                            </figure>
-                            <div class="book-title">
-                                Atomic Habits
-                            </div>
-                            <div class="book-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half"></i>
-                            </div>
-                            <div class="book-price">
-                                <span class="book-price-normal">$59.95</span>14.54$
-                            </div>
-                        </div>
-                        <div class="book">
-                            <figure class="book-img-wrapper">
-                                <img class="book-image" src="./assets/david goggins.jpeg" alt="">
-                            </figure>
-                            <div class="book-title">
-                                Can't Hurt me
-                            </div>
-                            <div class="book-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half"></i>
-                            </div>
-                            <div class="book-price">
-                                <span class="book-price-normal">$59.95</span>14.54$
-                            </div>
-                        </div>
-                        <div class="book">
-                            <figure class="book-img-wrapper">
-                                <img class="book-image" src="./assets/deep work.jpeg" alt="">
-                            </figure>
-                            <div class="book-title">
-                                Deep Work
-                            </div>
-                            <div class="book-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half"></i>
-                            </div>
-                            <div class="book-price">
-                                <span class="book-price-normal">$59.95</span>14.54$
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -347,6 +285,7 @@
         </div>
     </footer>
     <script src="index.js"></script>
+    <script src="data.js"></script>
 </body>
 
 </html>
